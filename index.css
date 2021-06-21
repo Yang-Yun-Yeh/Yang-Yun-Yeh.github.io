@@ -1,0 +1,32 @@
+/*在sapn tag中調整字的大小、顏色、位置*/
+span{
+	text-align: center;
+	margin: auto;
+	color: black;
+	font-size: 48px;
+	color: yellow;
+}
+
+/*在id = ocean的tag中套用rgba語法*/
+#ocean{
+	width: 100%;
+	height: 64px;
+	background-image: linear-gradient(to right, rgba(30, 144, 255, 0.5), rgba(0, 0, 255, 0.9));
+}
+
+/*設定table tag的屬性*/
+table{
+	border-collapse: collapse;
+	width: 800px;
+}
+
+/*設定th, td tag的文字位置、大小*/
+th, td{
+	text-align: center;
+	padding: 12px;
+}
+
+/*當tr的row為偶數時，調整背景顏色*/
+tr:nth-child(even){
+	background-color: #F5F5F5;
+}

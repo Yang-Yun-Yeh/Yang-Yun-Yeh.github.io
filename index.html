@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Self introduction</title>
+		<link rel="stylesheet" href="index.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<center><span id="ocean">Self Introduction of a MIS student</span></center>
+		<hr>
+		
+		<div>
+			<p id="click">Please click Show Emoji button...</p>
+			<button onclick="show_emoji()">Show Emoji</button>
+			<ul>
+				<li><h3>About Me:</h3></li>
+					<ol>
+						<li>Basic Info:</li>
+							<p>Name: Yang-Yun-Yeh</p>
+							<p>Phone: 0912345678</p>
+							<p>Gender: male</p>
+						<li>College & Department:</li>
+							<p>大二: 中央資管(大一升大二時轉系)</p>
+							<p>大一: 中央物理</p>
+						<li>Grade:</li>
+							<table border = "1">
+								<tr>
+									<th>系級</th>
+									<th>系排</th>
+									<th>班排</th>
+								</tr>
+								<tr>
+									<td>大一上學期</td>
+									<td>3/47</td>
+									<td>3/47</td>
+								</tr>
+								<tr>
+									<td>大一下學期</td>
+									<td>1/45</td>
+									<td>1/45</td>
+								</tr>
+								<tr>
+									<td>大二上學期</td>
+									<td>4/107</td>
+									<td>1/53</td>
+								</tr>								
+							</table>
+					</ol>
+				<li><h3>Programming Project:</h3></li>
+					<ol>
+						<li>用VB模擬雙星運動:</li>
+							<p>由於VB是以物件導向為主的程式，因此我以幾個力學公式(T=2πL^1.5 √(1/(G(M_1+M_2))),r_1=M_2/(M_1+M_2 )×L)、while迴圈和一些array來計算、儲存模擬的data並運用Picture Box、Timer把結果以簡易動畫形式show出來。</p>
+							<img src="./img/simulation.png" alt="This is the result of simulation." width="300" height="200">
+							<br>
+							
+						<li>用Python模擬實驗project(coupled-driven oscillation):</li>
+							<p>在做實驗專題時，我用迴圈和6個RK4(一種數值方法)(∵有6個變數要考慮)去模擬兩個單擺中間接彈簧外加一顆步徑馬達施加週期性外力的運動狀態。經過不斷嘗試和debug，終於畫出兩個單擺θ_2-θ_1的Lissajous plot。</p>
+							<img src="./img/Lissajous.png" alt="This is the result of Lissajous plot。." width="300" height="200">
+							<br>
+					</ol>
+				<li><h3>Reference Links:</h3></li>
+					<ol>
+						<li>Go to CV web: <a href="https://Yang-Yun-Yeh.github.io/">Click Me</a></li>
+					</ol>
+			</ul>
+		</div>
 
+		<script>
+			function show_emoji(){
+				document.getElementById("click").innerHTML = "(・∀・) (≧▽≦) (≧∇≦)b(≧∇≦)b(≧∇≦)b";
+			}
+		</script>
+	</body>
+</html>
